@@ -18,21 +18,21 @@ from FZBypass.core.bot_utils import AuthChatsTopics, convert_time, BypassFilter
 @Bypass.on_message(command("start"))
 async def start_msg(client, message):
     await message.reply(
-        f"""<b><i>FZ Bypass Bot!</i></b>
+        f"""<b><i>SA Bypass Bot!</i></b>
     
     <i>A Powerful Elegant Multi Threaded Bot written in Python... which can Bypass Various Shortener Links, Scrape links, and More ... </i>
     
     <i><b>Bot Started {convert_time(time() - BOT_START)} ago...</b></i>
 
-🛃 <b>Use Me Here :</b> @CyberPunkGrp <i>(Bypass Topic)</i>""",
+🛃 <b>Join Here :</b> @sc_requests <i>(Bypass Topic)</i>""",
         quote=True,
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("🎓 Dev", url="https://t.me/SilentDemonSD"),
+                    InlineKeyboardButton("🎓 Dev", url="https://t.me/amudhan_38"),
                     InlineKeyboardButton(
                         "🔍 Deploy Own",
-                        url="https://github.com/SilentDemonSD/FZBypassBot",
+                        url="https://github.com/sabots08/FZBypassBot",
                     ),
                 ]
             ]
@@ -199,7 +199,7 @@ async def inline_query(client, query):
                     [
                         [
                             InlineKeyboardButton(
-                                "FZ Channel", url="https://t.me/FXTorrentz"
+                                "Request movies Channel", url="https://t.me/sc_requests"
                             ),
                             InlineKeyboardButton(
                                 "Try Bypass", switch_inline_query_current_chat="!bp "
