@@ -306,6 +306,14 @@ async def shorter(url: str) -> str:
     except:
         raise DDLException("Link Extraction Failed")
 
+async def tnshort(url: str) -> str:
+    try:
+        cget = create_scraper().request
+        resp = cget("GET", url, allow_redirects=True)
+        return resp.headers["Location"]
+    except:
+        raise DDLException("Link Extraction Failed")
+
 
 async def appurl(url: str):
     cget = create_scraper().request
